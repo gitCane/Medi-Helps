@@ -1,0 +1,42 @@
+.page {
+  min-height: calc(100vh - var(--navbar-height));
+}
+
+.page-header {
+  background: var(--background);
+  padding: 4rem 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.page-header-content {
+  max-width: 768px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-header h1 {
+  color: var(--text-primary);
+  font-size: var(--font-size-4xl);
+  margin-bottom: 1rem;
+}
+
+.page-header p {
+  color: var(--text-secondary);
+  font-size: var(--font-size-lg);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: var(--breakpoint-md)) {
+  .page-header {
+    padding: 3rem 0 1.5rem;
+  }
+
+  .page-header h1 {
+    font-size: var(--font-size-3xl);
+  }
+
+  .page-header p {
+    font-size: var(--font-size-base);
+  }
+}

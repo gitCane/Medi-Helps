@@ -30,16 +30,40 @@ const Contact = () => {
 
   return (
     <section className="contact" id="contact">
-      <div className="container">
-        <motion.div 
+      <div className="containerContact">
+        <motion.div
+          className="contact-info"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h3>Let's Connect</h3>
+          <p>Get in touch with us for any questions about our services or to schedule a consultation.</p>
+          <div className="contact-details">
+            <div className="contact-item">
+              <i className="fas fa-map-marker-alt"></i>
+              <span>Karawal Nagar, Uttar Pradesh, 110090</span>
+            </div>
+            <div className="contact-item">
+              <i className="fas fa-phone"></i>
+              <span>+91 9873790001</span>
+            </div>
+            <div className="contact-item">
+              <i className="fas fa-envelope"></i>
+              <span>info.mehilife@gmail.com</span>
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div
           className="contact-card"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
         >
           <div className="contact-header">
             <h2 className="contact-title">CONNECT WITH US</h2>
-            <p className="contact-description">We will get in touch with you</p>
+            <p className="contact-description">We will get in touch with you shortly</p>
           </div>
           <form onSubmit={handleSubmit} className="contact-form">
             <div className="form-group">
