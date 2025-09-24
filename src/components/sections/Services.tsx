@@ -1,10 +1,12 @@
 import React from 'react';
+import type { ReactElement } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { Card } from '../ui/Card';
 import './Services.css';
 
 interface ServiceCard {
-  icon: JSX.Element;
+  icon: ReactElement;
   title: string;
   description: string;
 }
@@ -86,28 +88,35 @@ const Services: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="services-grid">
+        <motion.div 
+          className="services-grid"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ staggerChildren: 0.1 }}
+        >
           {services.map((service, index) => (
-            <motion.div 
+            <motion.div
               key={index}
-              className="service-card"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -5, transition: { duration: 0.2 } }}
+              whileHover={{ y: -8, transition: { duration: 0.2 } }}
             >
-              <div className="service-icon">
-                {service.icon}
-              </div>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-              <div className="service-hover">
-                <Link to="/contact" className="btn btn-primary">Learn More</Link>
-              </div>
+              <Card
+                variant="elevated"
+                className="service-card"
+              >
+                <div className="service-content">
+                  <div className="service-icon">
+                    {service.icon}
+                  </div>
+                  <h3>{service.title}</h3>
+                  <p>{service.description}</p>
+                  <div className="service-hover">
+                    <Link to="/contact" className="btn btn-primary">Learn More</Link>
+                  </div>
+                </div>
+              </Card>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

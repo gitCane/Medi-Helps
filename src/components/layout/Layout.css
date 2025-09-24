@@ -1,0 +1,30 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.layout-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
+  padding-top: var(--navbar-height);
+}
+
+/* Shared layout utilities */
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+@media (max-width: var(--breakpoint-sm)) {
+  .container {
+    padding: 0 var(--container-padding-mobile);
+  }
+}

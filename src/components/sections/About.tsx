@@ -68,17 +68,30 @@ const About: React.FC = () => {
         <div className="about-features">
           <motion.div 
             className="feature-image"
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ 
+              opacity: 1, 
+              x: 0 
+            }}
+            transition={{ 
+              duration: 0.8,
+              type: "spring",
+              bounce: 0.3
+            }}
             viewport={{ once: true }}
           >
-            <img src="/images/healthcare-team.jpg" alt="Healthcare Team" />
+            <motion.img 
+              src="/images/aboutus.jpg" 
+              alt="Healthcare Team"
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            />
             <div className="image-pattern"></div>
           </motion.div>
           
           <div className="feature-content">
-            <h2>Why Choose Medi Helps?</h2>
+            <h2>Why Choose Mehi Helps?</h2>
             <p>We combine industry expertise with innovative solutions to deliver exceptional results for our healthcare partners.</p>
             
             <div className="feature-list">
