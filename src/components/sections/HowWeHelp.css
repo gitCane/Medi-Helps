@@ -1,0 +1,41 @@
+.how-we-help {
+  padding: 60px 0;
+}
+
+.two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.illustration img {
+  width: 100%;
+  max-width: 420px;
+}
+
+.content h2 {
+  color: var(--primary);
+  font-size: 28px;
+  margin: 0 0 10px;
+}
+
+.content .muted {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.tags span {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+}

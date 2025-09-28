@@ -25,8 +25,8 @@ const HomePage: React.FC = () => {
               <p>Explore our healthcare solutions</p>
             </Link>
             <Link to="/projects" className="quick-link-card">
-              <h3>Projects</h3>
-              <p>View our successful implementations</p>
+              <h3>Hospitals</h3>
+              <p>Explore our network of prestigious hospitals</p>
             </Link>
             <Link to="/contact" className="quick-link-card">
               <h3>Contact</h3>
