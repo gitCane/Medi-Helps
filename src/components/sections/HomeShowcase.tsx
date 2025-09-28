@@ -17,9 +17,12 @@ const HomeShowcase: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <span className="badge">Welcome to Medi Helps</span>
-            <h1>Modern Healthcare Solutions for Better Living</h1>
+            <h1> Why India? Why Medi-Helps?</h1>
             <p className="lead">
-              Experience world-class healthcare consulting that transforms challenges into opportunities. We help healthcare providers optimize their operations and deliver better patient care.
+               Because world-class healthcare shouldn’t cost a fortune.  
+        India offers advanced medical technology, globally trained doctors,  
+        and premium care — at a price that’s 60-80% lower than most countries.  
+        Medi-Helps makes the entire process seamless for you.
             </p>
             <div className="showcase-buttons">
               <Link to="/contact" className="btn btn-primary">Get Started</Link>

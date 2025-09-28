@@ -8,10 +8,9 @@ const About: React.FC = () => {
       <div className="container">
         <div className="about-header">
           <span className="section-subtitle">About Us</span>
-          <h2 className="section-title">Making Healthcare Better Together</h2>
+          <h2 className="section-title">Who We Are</h2>
           <p className="section-description">
-            With years of experience and deep industry knowledge, we help healthcare
-            organizations optimize their operations and deliver exceptional patient care.
+           We connect international patients with India’s best hospitals, doctors, and treatment packages. Our mission is simple — bring you world-class healthcare at affordable rates, while giving you a smooth and stress-free experience from visa to recovery.
           </p>
         </div>
         

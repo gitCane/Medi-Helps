@@ -7,7 +7,8 @@ const ContactPage: React.FC = () => {
       <div className="page-header">
         <div className="container">
           <h1>Contact Us</h1>
-          <p>Get in touch with our healthcare consulting experts</p>
+          <h2>Let’s Start Your Journey</h2>
+          <p>Our international patient desk is ready 24/7 to help you plan your treatment and travel.</p>
         </div>
       </div>
       <Contact />
