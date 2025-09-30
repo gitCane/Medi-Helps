@@ -21,7 +21,9 @@
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 0 var(--container-padding);
+  
 }
+
 
 @media (max-width: var(--breakpoint-sm)) {
   .container {
