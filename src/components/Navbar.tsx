@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useBreakpoint } from '../hooks/useBreakpoint';
 import MobileMenu from './MobileMenu';
+import logo from '../assets/logo.new.png';
 import './Navbar.css';
 
 const Navbar: React.FC = () => {
@@ -61,7 +62,7 @@ const Navbar: React.FC = () => {
           transition={{ type: "spring", stiffness: 400, damping: 17 }}
         >
           <Link to="/" className="navbar__logo">
-            <img src="../images/logo.png" alt="Medi Helps Logo" className="navbar__logo-img" />
+            <img src={logo} alt="Medi Helps Logo" className="navbar__logo-img" />
           </Link>
         </motion.div>
 

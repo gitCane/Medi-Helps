@@ -2,7 +2,39 @@
   padding: 0rem 0;
   background-color: var(--background);
 }
+/*added padding to the info */
+.contact-info{
+  padding-left: 140px;
+} 
+.contact-info h3 {
+  background: linear-gradient(90deg, #1F2937, #00A86B, #1F2937);
+  background-size: 200% auto; /* Bigger for animation */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Firefox support */
+  color: transparent;
+  transition: background-position 0.5s ease-in-out;
+}
 
+.contact-info h3:hover {
+  background-position: right center; /* Animate gradient on hover */
+}
+
+/* contact page heading with gradient effect */
+.container h1,
+.container h2 {
+  background: linear-gradient(90deg, #1F2937, #00A86B, #1F2937);
+  background-size: 200% auto; /* Bigger background for animation */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* for Firefox */
+  color: transparent;
+  transition: background-position 0.5s ease-in-out;
+}
+.container h1:hover,
+.container h2:hover {
+  background-position: right center; /* Animate gradient movement */
+}
 
 .contact-card {
   background: var(--primary);
