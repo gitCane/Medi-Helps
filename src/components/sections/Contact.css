@@ -37,7 +37,7 @@
 }
 
 .contact-card {
-  background: var(--primary);
+  background: #2b6953;
   border-radius: 15px;
   padding: 3rem 4rem;
   color: white;
@@ -150,3 +150,5 @@
     grid-column: span 1;
   }
 }
+
+

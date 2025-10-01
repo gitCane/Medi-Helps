@@ -22,11 +22,17 @@ const About: React.FC = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <div className="card-icon">
+            <motion.div 
+              className="card-icon"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1, rotate: 0 }}
+              whileHover={{ scale: 1.2, rotate: 10 }}
+              transition={{ type: "spring", stiffness: 260, damping: 20 }}
+            >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
-            </div>
+            </motion.div>
             <h3>Hospital Management</h3>
             <p>Streamline operations and improve patient care with our comprehensive hospital management solutions.</p>
           </motion.div>
@@ -38,13 +44,19 @@ const About: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="card-icon">
+            <motion.div 
+              className="card-icon"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1, rotate: 0 }}
+              whileHover={{ scale: 1.2, rotate: -10 }}
+              transition={{ type: "spring", stiffness: 260, damping: 20 }}
+            >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-              </svg>
-            </div>
-            <h3>Medical Education</h3>
-            <p>Supporting medical institutions with cutting-edge educational resources and training programs.</p>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0h6" />
+               </svg>
+            </motion.div>
+            <h3>Accommodation & Stay</h3>
+            <p>Comfortable and affordable stays for patients and families near hospitals.</p>
           </motion.div>
 
           <motion.div 
@@ -54,13 +66,19 @@ const About: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <div className="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
-              </svg>
-            </div>
-            <h3>Healthcare Analytics</h3>
-            <p>Transform data into actionable insights with our advanced healthcare analytics solutions.</p>
+            <motion.div 
+              className="card-icon"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1, rotate: 0 }}
+              whileHover={{ scale: 1.2, rotate: 10 }}
+              transition={{ type: "spring", stiffness: 260, damping: 20 }}
+            >
+               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657A8 8 0 016.343 5.343m0 0A8 8 0 0017.657 16.657zM12 2v2m0 16v2m10-10h-2M4 12H2m15.364-7.364l-1.414 1.414M7.05 16.95l-1.414 1.414M16.95 16.95l1.414 1.414M7.05 7.05L5.636 5.636" />
+                </svg> 
+            </motion.div>
+            <h3>Travel & Visa Assistance</h3>
+            <p>Seamless medical visa guidance and travel planning for a smooth journey.</p>
           </motion.div>
         </div>
 
