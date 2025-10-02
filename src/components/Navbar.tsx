@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useBreakpoint } from '../hooks/useBreakpoint';
 import MobileMenu from './MobileMenu';
-import logo from '../assets/logo.new.png';
+import logo from '../assets/logo.png';
 import './Navbar.css';
 
 const Navbar: React.FC = () => {
