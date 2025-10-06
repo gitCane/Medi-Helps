@@ -1,79 +1,49 @@
 .contact {
-  padding: 5rem 0;
+  padding: 0rem 0;
   background-color: var(--background);
-  position: relative;
-  overflow: hidden;
 }
-
-.containerContact {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 3rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.contact-info {
-  padding: 2rem;
-  color: var(--text-primary);
-}
-
+/*added padding to the info */
+.contact-info{
+  padding-left: 140px;
+} 
 .contact-info h3 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  background: linear-gradient(45deg, var(--primary), #2563eb);
+  background: linear-gradient(90deg, #1F2937, #00A86B, #1F2937);
+  background-size: 200% auto; /* Bigger for animation */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text; /* Firefox support */
+  color: transparent;
+  transition: background-position 0.5s ease-in-out;
 }
 
-.contact-info p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  color: var(--text-secondary);
+.contact-info h3:hover {
+  background-position: right center; /* Animate gradient on hover */
 }
 
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+/* contact page heading with gradient effect */
+.container h1,
+.container h2 {
+  background: linear-gradient(90deg, #1F2937, #00A86B, #1F2937);
+  background-size: 200% auto; /* Bigger background for animation */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* for Firefox */
+  color: transparent;
+  transition: background-position 0.5s ease-in-out;
 }
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-size: 1.1rem;
-  color: var(--text-primary);
-}
-
-.contact-item i {
-  width: 40px;
-  height: 40px;
-  background: var(--primary);
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  transition: transform 0.3s ease;
-}
-
-.contact-item:hover i {
-  transform: scale(1.1);
+.container h1:hover,
+.container h2:hover {
+  background-position: right center; /* Animate gradient movement */
 }
 
 .contact-card {
-  background: var(--primary);
+  background: #2b6953;
   border-radius: 15px;
   padding: 3rem 4rem;
   color: white;
-  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   box-shadow: var(--shadow-lg);
-  position: relative;
-  overflow: hidden;
 }
 
 .contact-header {
@@ -180,3 +150,5 @@
     grid-column: span 1;
   }
 }
+
+

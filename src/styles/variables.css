@@ -2,10 +2,10 @@
 
 :root {
   /* Colors */
-  --primary: #2563EB;
+  --primary:  #146648; /* Rolex Green */
   --primary-dark: #1E40AF;
-  --text-primary: #1F2937;
-  --text-secondary: #4B5563;
+   --text-primary: #1F2937; 
+  --text-secondary: #030a13f0;
   --background: #F9FAFB;
   --white: #ffffff;
   --gray-100: #F3F4F6;
