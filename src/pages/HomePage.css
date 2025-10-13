@@ -20,7 +20,7 @@
 
 .quick-link-card:hover {
   transform: translateY(-5px);
-  border-color: var(--color-primary);
+  border-color: var(--primary);
 }
 
 .quick-link-card h3 {

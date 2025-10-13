@@ -99,7 +99,7 @@ const Hospitals = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <a href="#contact" className="btn btn-primary">View All Hospitals</a>
+          <a href="#contact" className="btn btn-primary" style={{color: 'green'}}>View All Hospitals</a>
         </motion.div>
       </div>
     </section>

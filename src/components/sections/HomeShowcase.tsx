@@ -71,8 +71,6 @@ const HomeShowcase: React.FC = () => {
               gap: isTablet || isMobile ? '0.75rem' : '1rem',
               justifyContent: (isTablet || isLaptop || isMobile) ? 'center' : 'flex-start'
             }}>
-              <Link to="/contact" className="btn btn-primary">Get Started</Link>
-              <Link to="/services" className="btn btn-outline">Our Services</Link>
             </div>
             <div style={statsGridStyles}>
               <div className="stat-card" style={{

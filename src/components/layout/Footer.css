@@ -1,7 +1,69 @@
 .site-footer {
-  background: #fff;
-  padding: 4rem 0 2rem;
+  background: #f8fcf9;
   border-top: 1px solid #edf2f7;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h3 {
+  color: #fcfdfd;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  color: #fafafa;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  border-top: 1px solid #edf2f7;
+  padding: 1.25rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:  #146648;
+}
+
+.copyright {
+  color: #f4f4f5;
+  font-size: 0.9rem;
+}
+
+.language-selector select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #475569;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.language-selector select:hover {
+  border-color: #cbd5e1;
+}
+
+.language-selector select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px #3b82f6;
 }
 
 .footer-grid {
@@ -120,7 +182,7 @@
 
 .copyright {
   text-align: center;
-  color: var(--text-secondary);
+  color: white;
   padding-top: 2rem;
   border-top: 1px solid #edf2f7;
   max-width: 1200px;
@@ -142,12 +204,6 @@
   
   .footer-form {
     order: -1;
-  }
-}
-}
-  }
-}
-    text-align: center;
   }
 }
 

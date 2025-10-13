@@ -12,7 +12,7 @@
 .section-subtitle {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: rgba(37, 99, 235, 0.1);
+  background: rgba(64, 165, 106, 0.1);
   color: var(--primary);
   border-radius: 20px;
   font-weight: 500;
@@ -57,7 +57,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(37, 99, 235, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(64, 165, 106, 0.1) 0%, rgba(122, 224, 156, 0.05) 100%);
   top: 0;
   left: 0;
   transform: translateY(100%);
@@ -67,7 +67,7 @@
 
 .about-card:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.1);
+  box-shadow: 0 20px 40px rgba(64, 165, 106, 0.1);
 }
 
 .about-card:hover::before {
@@ -80,7 +80,7 @@
 }
 
 .about-card .card-icon {
-  background: linear-gradient(135deg, var(--primary) 0%, #1E40AF 100%);
+  background: linear-gradient(45deg, var(--primary), #33943b);
   width: 64px;
   height: 64px;
   border-radius: 16px;
@@ -145,10 +145,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(45deg, rgba(37, 99, 235, 0.1) 25%, transparent 25%),
-                    linear-gradient(-45deg, rgba(37, 99, 235, 0.1) 25%, transparent 25%),
-                    linear-gradient(45deg, transparent 75%, rgba(37, 99, 235, 0.1) 75%),
-                    linear-gradient(-45deg, transparent 75%, rgba(37, 99, 235, 0.1) 75%);
+  background-image: linear-gradient(45deg, rgba(64, 165, 106, 0.1) 25%, transparent 25%),
+                    linear-gradient(-45deg, rgba(64, 165, 106, 0.1) 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, rgba(64, 165, 106, 0.1) 75%),
+                    linear-gradient(-45deg, transparent 75%,rgba(64, 165, 106, 0.1) 75%);
   background-size: 20px 20px;
   background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
   opacity: 0.3;

@@ -81,7 +81,7 @@ const Projects = () => {
                 <img src={project.image} alt={project.title} />
                 <div className="project-overlay">
                   <span className="project-category">{project.category}</span>
-                  <a href="#contact" className="btn btn-outline">View Details</a>
+                  <a href="#contact" className="btn btn-outline" style={{color: 'green'}}>View Details</a>
                 </div>
               </div>
               <div className="project-content">

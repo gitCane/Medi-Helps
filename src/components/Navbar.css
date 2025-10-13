@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  border-bottom: 1px solid rgba(37, 99, 235, 0.1);
+  border-bottom: 1px solid rgba(64, 165, 106, 0.1);
   padding: 1rem 0;
   height: var(--navbar-height);
   display: flex;
@@ -46,7 +46,7 @@
 
 .navbar__logo-img {
   height: 200px;
-  width: 200px;
+  width: 300px;
 }
 
 .navbar__menu {
@@ -126,6 +126,7 @@
 
 .navbar__toggle:hover {
   transform: scale(1.1);
+  color: green;
 }
 
 .navbar__toggle svg {
