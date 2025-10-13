@@ -13,14 +13,22 @@ const App: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Set default language parameter if none exists
+  // Set language parameter from localStorage or default to 'en'
   useEffect(() => {
     const params = new URLSearchParams(location.search);
+    const storedLang = localStorage.getItem('preferredLanguage');
+    
     if (!params.has('lang')) {
-      params.set('lang', 'en');
+      // Use stored language or default to 'en'
+      const langToSet = storedLang || 'en';
+      params.set('lang', langToSet);
       navigate({ search: params.toString() }, { replace: true });
+    } else {
+      // Update localStorage when URL parameter changes
+      const currentLang = params.get('lang');
+      localStorage.setItem('preferredLanguage', currentLang || 'en');
     }
-  }, []);
+  }, [location.search]);
 
   return (
     <LanguageProvider>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useBreakpoint } from '../hooks/useBreakpoint';
+import { useTranslate } from '../hooks/useTranslate';
 import MobileMenu from './MobileMenu';
 import './Navbar.css';
 
@@ -10,6 +11,7 @@ const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
   const { isMobile } = useBreakpoint();
+  const { translate } = useTranslate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,37 +30,30 @@ const Navbar: React.FC = () => {
     setIsMenuOpen(false);
   };
 
-  const containerVariants = {
-    hidden: { y: -100, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 20
-      }
-    }
-  };
-
-  const linkVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
-    hover: { scale: 1.05, color: "#2563EB" }
-  };
+  const navItems = [
+    { to: "/", key: "nav-home" as const },
+    { to: "/about", key: "nav-about" as const },
+    { to: "/services", key: "nav-services" as const },
+    { to: "/hospitals", key: "nav-hospitals" as const },
+    { to: "/contact", key: "nav-contact" as const }
+  ] as const;
 
   return (
     <motion.div 
       className={`navbar ${isScrolled ? 'scrolled' : ''}`}
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ 
+        type: "spring" as const,
+        stiffness: 100,
+        damping: 20
+      }}
     >
       <div className="navbar__container">
         <motion.div
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          transition={{ type: "spring" as const, stiffness: 400, damping: 17 }}
         >
           <Link to="/" className="navbar__logo">
             <img src="../images/logo.png" alt="Medi Helps Logo" className="navbar__logo-img" />
@@ -94,13 +89,7 @@ const Navbar: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            {[
-              { to: "/", label: "Home" },
-              { to: "/about", label: "About" },
-              { to: "/services", label: "Services" },
-              { to: "/hospitals", label: "Hospitals" },
-              { to: "/contact", label: "Contact" }
-            ].map((item, index) => (
+            {navItems.map((item, index) => (
               <motion.div
                 key={item.to}
                 initial={{ opacity: 0, y: -20 }}
@@ -115,7 +104,7 @@ const Navbar: React.FC = () => {
                     whileHover={{ scale: 1.05, color: "#2563EB" }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    {item.label}
+                    {translate(item.key)}
                   </motion.span>
                 </Link>
               </motion.div>

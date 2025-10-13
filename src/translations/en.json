@@ -1,0 +1,160 @@
+{
+  "about-us-header": "About Us",
+  "about-us-mission": "Our Mission",
+  "about-us-vision": "Our Vision",
+  "about-us-mission-text": "To provide accessible and quality healthcare assistance to everyone",
+  "about-us-vision-text": "To become the most trusted medical assistance provider worldwide",
+  "nav-home": "Home",
+  "nav-about": "About",
+  "nav-services": "Services",
+  "nav-hospitals": "Hospitals",
+  "nav-contact": "Contact",
+  "home": {
+    "hero": {
+      "welcome": "Welcome to Medi Helps",
+      "title": "Modern Healthcare Solutions for Better Living",
+      "description": "Experience world-class healthcare consulting that transforms challenges into opportunities. We help healthcare providers optimize their operations and deliver better patient care.",
+      "subtitle": "Professional Medical Assistance",
+      "cta": "Get Started"
+    },
+    "services": {
+      "title": "Our Services",
+      "consultation": "Medical Consultation",
+      "emergency": "24/7 Emergency Care",
+      "specialists": "Specialist Referrals",
+      "insurance": "Insurance Assistance"
+    },
+    "quickLinks": {
+      "about": "Learn more about our mission and values",
+      "services": "Explore our healthcare solutions",
+      "hospitals": "Explore our network of prestigious hospitals",
+      "contact": "Get in touch with our team"
+    },
+    "stats": {
+      "satisfaction": "Client Satisfaction",
+      "experience": "Years Experience",
+      "projects": "Projects Completed"
+    }
+  },
+  "about": {
+    "subtitle": "About Us",
+    "title": "Making Healthcare Better Together",
+    "description": "With years of experience and deep industry knowledge, we help healthcare organizations optimize their operations and deliver exceptional patient care",
+    "mission": "Our Mission",
+    "vision": "Our Vision",
+    "missionText": "To provide accessible and quality healthcare assistance to everyone",
+    "visionText": "To become the most trusted medical assistance provider worldwide",
+    "management": {
+      "title": "Hospital Management",
+      "description": "Streamline operations and improve patient care with our comprehensive hospital management solutions"
+    },
+    "education": {
+      "title": "Medical Education",
+      "description": "Supporting medical institutions with cutting-edge educational resources and training programs"
+    },
+    "whyChoose": {
+      "title": "Why Choose Medi Helps?",
+      "description": "We combine industry expertise with innovative solutions to deliver exceptional results for our healthcare partners.",
+      "expertise": {
+        "title": "Trusted Expertise",
+        "description": "Over 10 years of experience in healthcare consulting"
+      },
+      "innovation": {
+        "title": "Innovative Solutions",
+        "description": "Cutting-edge technology and proven methodologies"
+      },
+      "support": {
+        "title": "Dedicated Support",
+        "description": "24/7 expert assistance and consultation"
+      }
+    }
+  },
+  "services": {
+    "network": "Our Services",
+    "title": "Comprehensive Healthcare Solutions",
+    "description": "We offer a wide range of healthcare consulting services to help organizations optimize their operations and deliver better patient care.",
+    "learnMore": "Learn More",
+    "list": {
+      "analytics": {
+        "title": "Healthcare Analytics",
+        "description": "Transform your healthcare data into actionable insights with our advanced analytics solutions."
+      },
+      "management": {
+        "title": "Hospital Management",
+        "description": "Streamline operations and improve patient care with our comprehensive management solutions."
+      },
+      "security": {
+        "title": "Medical Security",
+        "description": "Protect patient data and ensure compliance with our advanced security measures."
+      },
+      "metrics": {
+        "title": "Performance Metrics",
+        "description": "Track and optimize healthcare performance with our comprehensive analytics tools."
+      },
+      "education": {
+        "title": "Medical Education",
+        "description": "Support medical institutions with cutting-edge educational resources and training."
+      },
+      "care": {
+        "title": "Patient Care",
+        "description": "Enhance patient experience with our specialized care management solutions."
+      }
+    }
+  },
+  "hospitals": {
+    "network": "Our Network Hospitals",
+    "title": "Leading Healthcare Facilities",
+    "viewAll": "View All Hospitals",
+    "description": "Explore our network of prestigious hospitals providing world-class healthcare services with cutting-edge medical technology and expert medical professionals.",
+    "viewDetails": "View Details",
+    "list": {
+      "apollo": {
+        "description": "Leading multi-specialty hospital with state-of-the-art facilities and expert healthcare professionals",
+        "category": "Multi-Specialty"
+      },
+      "fortis": {
+        "description": "Renowned for advanced medical treatments and comprehensive patient care services",
+        "category": "Super-Specialty"
+      },
+      "max": {
+        "description": "Excellence in healthcare with cutting-edge medical technology and experienced doctors",
+        "category": "Super-Specialty"
+      },
+      "ambani": {
+        "description": "World-class healthcare facility offering advanced medical treatments and research",
+        "category": "Research & Care"
+      },
+      "aiims": {
+        "description": "Premier government medical institution known for exceptional medical education and patient care",
+        "category": "Government"
+      },
+      "manipal": {
+        "description": "Integrated healthcare facility providing comprehensive medical services and specialized treatments",
+        "category": "Multi-Specialty"
+      }
+    }
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "subtitle": "Get in touch with us for any questions about our services or to schedule a consultation",
+    "form": {
+      "header": "CONNECT WITH US",
+      "subheader": "We will get in touch with you shortly",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone no.",
+      "message": "Message...",
+      "submit": "CONNECT",
+      "successMessage": "Thanks, {name}! We will contact you soon."
+    },
+    "address": "Karawal Nagar, Uttar Pradesh, 110090",
+    "phone": "+91 9873790001",
+    "email": "Email"
+  },
+  "footer": {
+    "rights": "All Rights Reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "language": "Language"
+  }
+}

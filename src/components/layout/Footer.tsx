@@ -16,10 +16,10 @@ const Footer = () => {
     <footer className="site-footer">
       <div className="footer-bottom">
         <div className="copyright">
-          <span>© 2025 Medi Life. {translate('Footer-Rights')}</span>
+          <span>© 2025 Medi Life. {translate('footer.rights')}</span>
         </div>
         <div className="language-selector">
-          <label className="language-sele" htmlFor="language-sele">{translate('Footer-Language')}:</label>
+          <label className="language-sele" htmlFor="language-sele">{translate('footer.language')}:</label>
           <select id="language-select" value={language} onChange={handleLanguageChange}>
             <option value="en">English</option>
             <option value="ru">Русский</option>

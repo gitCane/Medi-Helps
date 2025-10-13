@@ -1,18 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslate } from '../../hooks/useTranslate';
 import './About.css';
 
 const About: React.FC = () => {
+  const { translate } = useTranslate();
   return (
     <section className="about" id="about">
       <div className="container">
         <div className="about-header">
-          <span className="section-subtitle">About Us</span>
-          <h2 className="section-title">Making Healthcare Better Together</h2>
-          <p className="section-description">
-            With years of experience and deep industry knowledge, we help healthcare
-            organizations optimize their operations and deliver exceptional patient care.
-          </p>
+          <span className="section-subtitle">{translate('about.subtitle')}</span>
+          <h2 className="section-title">{translate('about.title')}</h2>
+          <p className="section-description">{translate('about.description')}</p>
         </div>
         
         <div className="about-grid">
@@ -28,8 +27,8 @@ const About: React.FC = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
             </div>
-            <h3>Hospital Management</h3>
-            <p>Streamline operations and improve patient care with our comprehensive hospital management solutions.</p>
+            <h3>{translate('about.management.title')}</h3>
+            <p>{translate('about.management.description')}</p>
           </motion.div>
 
           <motion.div 
@@ -44,8 +43,8 @@ const About: React.FC = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
               </svg>
             </div>
-            <h3>Medical Education</h3>
-            <p>Supporting medical institutions with cutting-edge educational resources and training programs.</p>
+            <h3>{translate('about.education.title')}</h3>
+            <p>{translate('about.education.description')}</p>
           </motion.div>
 
           <motion.div 
@@ -91,8 +90,8 @@ const About: React.FC = () => {
           </motion.div>
           
           <div className="feature-content">
-            <h2>Why Choose Mehi Helps?</h2>
-            <p>We combine industry expertise with innovative solutions to deliver exceptional results for our healthcare partners.</p>
+            <h2>{translate('about.whyChoose.title')}</h2>
+            <p>{translate('about.whyChoose.description')}</p>
             
             <div className="feature-list">
               <motion.div 
@@ -108,8 +107,8 @@ const About: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4>Trusted Expertise</h4>
-                  <p>Over 10 years of experience in healthcare consulting</p>
+                  <h4>{translate('about.whyChoose.expertise.title')}</h4>
+                  <p>{translate('about.whyChoose.expertise.description')}</p>
                 </div>
               </motion.div>
 
@@ -126,8 +125,8 @@ const About: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4>Innovative Solutions</h4>
-                  <p>Cutting-edge technology and proven methodologies</p>
+                  <h4>{translate('about.whyChoose.innovation.title')}</h4>
+                  <p>{translate('about.whyChoose.innovation.description')}</p>
                 </div>
               </motion.div>
 
@@ -144,8 +143,8 @@ const About: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4>Dedicated Support</h4>
-                  <p>24/7 expert assistance and consultation</p>
+                  <h4>{translate('about.whyChoose.support.title')}</h4>
+                  <p>{translate('about.whyChoose.support.description')}</p>
                 </div>
               </motion.div>
             </div>
