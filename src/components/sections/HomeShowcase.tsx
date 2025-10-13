@@ -3,10 +3,12 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import ImageStrip from '../ImageStrip';
 import { useBreakpoint } from '../../hooks/useBreakpoint';
+import { useTranslate } from '../../hooks/useTranslate';
 import './HomeShowcase.css';
 
 const HomeShowcase: React.FC = () => {
   const { isMobile, isTablet, isLaptop } = useBreakpoint();
+  const { translate } = useTranslate();
 
   const showcaseStyles = {
     padding: isTablet ? '5rem 0'
@@ -57,14 +59,14 @@ const HomeShowcase: React.FC = () => {
             style={{ textAlign: titleStyles.textAlign }}
           >
             <span className="badge" style={{ fontSize: isMobile ? '0.8rem' : '0.875rem' }}>
-              Welcome to Medi Helps
+              {translate('home.hero.welcome')}
             </span>
-            <h1 style={titleStyles}>Modern Healthcare Solutions for Better Living</h1>
+            <h1 style={titleStyles}>{translate('home.hero.title')}</h1>
             <p className="lead" style={{
               fontSize: isTablet || isMobile ? '1rem' : '1.125rem',
               marginBottom: isTablet || isMobile ? '1.5rem' : '2rem'
             }}>
-              Experience world-class healthcare consulting that transforms challenges into opportunities. We help healthcare providers optimize their operations and deliver better patient care.
+              {translate('home.hero.description')}
             </p>
             <div className="showcase-buttons" style={{
               flexDirection: isTablet || isMobile ? 'column' as const : 'row' as const,
@@ -77,19 +79,19 @@ const HomeShowcase: React.FC = () => {
                 padding: isTablet ? '1rem' : isLaptop ? '1.25rem' : '1.5rem'
               }}>
                 <h3 style={{ fontSize: isTablet ? '1.75rem' : '2rem' }}>95%</h3>
-                <p>Client Satisfaction</p>
+                <p>{translate('home.stats.satisfaction')}</p>
               </div>
               <div className="stat-card" style={{
                 padding: isTablet ? '1rem' : isLaptop ? '1.25rem' : '1.5rem'
               }}>
                 <h3 style={{ fontSize: isTablet ? '1.75rem' : '2rem' }}>10+</h3>
-                <p>Years Experience</p>
+                <p>{translate('home.stats.experience')}</p>
               </div>
               <div className="stat-card" style={{
                 padding: isTablet ? '1rem' : isLaptop ? '1.25rem' : '1.5rem'
               }}>
                 <h3 style={{ fontSize: isTablet ? '1.75rem' : '2rem' }}>500+</h3>
-                <p>Projects Completed</p>
+                <p>{translate('home.stats.projects')}</p>
               </div>
             </div>
           </motion.div>

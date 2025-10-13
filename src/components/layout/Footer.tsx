@@ -1,43 +1,29 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { LanguageContext } from '../../context/LanguageContext';
+import type { Language } from '../../types/translations';
+import { useTranslate } from '../../hooks/useTranslate';
 import './Footer.css';
 
 const Footer = () => {
-  const [language, setLanguage] = useState('english');
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    query: ''
-  });
+  const { language, setLanguage } = useContext(LanguageContext);
+  const { translate } = useTranslate();
 
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setLanguage(e.target.value);
-  };
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log(formData);
+    setLanguage(e.target.value as Language);
   };
 
   return (
     <footer className="site-footer">
       <div className="footer-bottom">
         <div className="copyright">
-          <span>Copyright © 2025 Mehi Life. All Rights Reserved</span>
+          <span>© 2025 Medi Life. {translate('footer.rights')}</span>
         </div>
         <div className="language-selector">
-          <select value={language} onChange={handleLanguageChange}>
-            <option value="english">English</option>
-            <option value="russian">Русский</option>
-            <option value="spanish">Español</option>
+          <label className="language-sele" htmlFor="language-sele">{translate('footer.language')}:</label>
+          <select id="language-select" value={language} onChange={handleLanguageChange}>
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+            <option value="es">Español</option>
           </select>
         </div>
       </div>

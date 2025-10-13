@@ -1,5 +1,6 @@
 import { type FormEvent, type ChangeEvent, useState } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslate } from '../../hooks/useTranslate';
 import './Contact.css';
 
 interface FormData {
@@ -10,6 +11,7 @@ interface FormData {
 }
 
 const Contact = () => {
+  const { translate } = useTranslate();
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -19,7 +21,7 @@ const Contact = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert(`Thanks, ${formData.name}! We will contact you soon.`);
+    alert(translate('contact.form.successMessage').replace('{name}', formData.name));
     setFormData({ name: '', email: '', phone: '', message: '' });
   };
 
@@ -37,16 +39,16 @@ const Contact = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h3>Let's Connect</h3>
-          <p>Get in touch with us for any questions about our services or to schedule a consultation.</p>
+          <h3>{translate('contact.title')}</h3>
+          <p>{translate('contact.subtitle')}</p>
           <div className="contact-details">
             <div className="contact-item">
               <i className="fas fa-map-marker-alt"></i>
-              <span>Karawal Nagar, Uttar Pradesh, 110090</span>
+              <span>{translate('contact.address')}</span>
             </div>
             <div className="contact-item">
               <i className="fas fa-phone"></i>
-              <span>+91 9873790001</span>
+              <span>{translate('contact.phone')}</span>
             </div>
             <div className="contact-item">
               <i className="fas fa-envelope"></i>
@@ -62,15 +64,15 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="contact-header">
-            <h2 className="contact-title">CONNECT WITH US</h2>
-            <p className="contact-description">We will get in touch with you shortly</p>
+            <h2 className="contact-title">{translate('contact.form.header')}</h2>
+            <p className="contact-description">{translate('contact.form.subheader')}</p>
           </div>
           <form onSubmit={handleSubmit} className="contact-form">
             <div className="form-group">
               <input
                 type="text"
                 name="name"
-                placeholder="Full name"
+                placeholder={translate('contact.form.name')}
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -80,7 +82,7 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="Email"
+                placeholder={translate('contact.form.email')}
                 value={formData.email}
                 onChange={handleChange}
                 required
@@ -90,7 +92,7 @@ const Contact = () => {
               <input
                 type="tel"
                 name="phone"
-                placeholder="Phone no."
+                placeholder={translate('contact.form.phone')}
                 value={formData.phone}
                 onChange={handleChange}
                 required
@@ -99,14 +101,14 @@ const Contact = () => {
             <div className="form-group message">
               <textarea
                 name="message"
-                placeholder="Message..."
+                placeholder={translate('contact.form.message')}
                 value={formData.message}
                 onChange={handleChange}
                 required
               ></textarea>
             </div>
             <button type="submit" className="connect-button">
-              CONNECT
+              {translate('contact.form.submit')}
             </button>
           </form>
         </motion.div>

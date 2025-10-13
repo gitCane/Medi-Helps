@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useTranslate } from '../hooks/useTranslate';
 import HomeShowcase from '../components/sections/HomeShowcase';
 import './HomePage.css';
 
 const HomePage: React.FC = () => {
+  const { translate } = useTranslate();
   return (
     <>
       <HomeShowcase />
@@ -17,20 +19,20 @@ const HomePage: React.FC = () => {
         <div className="container">
           <div className="quick-links-grid">
             <Link to="/about" className="quick-link-card">
-              <h3>About Us</h3>
-              <p>Learn more about our mission and values</p>
+              <h3>{translate('nav-about')}</h3>
+              <p>{translate('home.quickLinks.about')}</p>
             </Link>
             <Link to="/services" className="quick-link-card">
-              <h3>Our Services</h3>
-              <p>Explore our healthcare solutions</p>
+              <h3>{translate('nav-services')}</h3>
+              <p>{translate('home.quickLinks.services')}</p>
             </Link>
             <Link to="/projects" className="quick-link-card">
-              <h3>Hospitals</h3>
-              <p>Explore our network of prestigious hospitals</p>
+              <h3>{translate('nav-hospitals')}</h3>
+              <p>{translate('home.quickLinks.hospitals')}</p>
             </Link>
             <Link to="/contact" className="quick-link-card">
-              <h3>Contact</h3>
-              <p>Get in touch with our team</p>
+              <h3>{translate('nav-contact')}</h3>
+              <p>{translate('home.quickLinks.contact')}</p>
             </Link>
           </div>
         </div>

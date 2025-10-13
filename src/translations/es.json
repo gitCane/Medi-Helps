@@ -1,0 +1,160 @@
+{
+  "about-us-header": "Sobre Nosotros",
+  "about-us-mission": "Nuestra Misión",
+  "about-us-vision": "Nuestra Visión",
+  "about-us-mission-text": "Proporcionar asistencia médica accesible y de calidad a todos",
+  "about-us-vision-text": "Convertirnos en el proveedor de asistencia médica más confiable del mundo",
+  "nav-home": "Inicio",
+  "nav-about": "Sobre Nosotros",
+  "nav-services": "Servicios",
+  "nav-hospitals": "Hospitales",
+  "nav-contact": "Contacto",
+  "home": {
+    "hero": {
+      "welcome": "Bienvenido a Medi Helps",
+      "title": "Soluciones Modernas de Salud para una Mejor Vida",
+      "description": "Experimente consultoría de salud de clase mundial que transforma los desafíos en oportunidades. Ayudamos a los proveedores de atención médica a optimizar sus operaciones y brindar una mejor atención al paciente.",
+      "subtitle": "Asistencia Médica Profesional",
+      "cta": "Comenzar"
+    },
+    "services": {
+      "title": "Nuestros Servicios",
+      "consultation": "Consulta Médica",
+      "emergency": "Atención de Emergencia 24/7",
+      "specialists": "Referencias a Especialistas",
+      "insurance": "Asistencia de Seguro"
+    },
+    "quickLinks": {
+      "about": "Conozca más sobre nuestra misión y valores",
+      "services": "Explore nuestras soluciones de salud",
+      "hospitals": "Explore nuestra red de hospitales prestigiosos",
+      "contact": "Póngase en contacto con nuestro equipo"
+    },
+    "stats": {
+      "satisfaction": "Satisfacción del Cliente",
+      "experience": "Años de Experiencia",
+      "projects": "Proyectos Completados"
+    }
+  },
+  "about": {
+    "subtitle": "Sobre Nosotros",
+    "title": "Mejorando la Atención Médica Juntos",
+    "description": "Con años de experiencia y profundo conocimiento de la industria, ayudamos a las organizaciones de salud a optimizar sus operaciones y brindar una atención excepcional al paciente",
+    "mission": "Nuestra Misión",
+    "vision": "Nuestra Visión",
+    "missionText": "Proporcionar asistencia médica accesible y de calidad a todos",
+    "visionText": "Convertirnos en el proveedor de asistencia médica más confiable del mundo",
+    "management": {
+      "title": "Gestión Hospitalaria",
+      "description": "Optimice las operaciones y mejore la atención al paciente con nuestras soluciones integrales de gestión hospitalaria"
+    },
+    "education": {
+      "title": "Educación Médica",
+      "description": "Apoyando a instituciones médicas con recursos educativos y programas de capacitación de vanguardia"
+    },
+    "whyChoose": {
+      "title": "¿Por qué elegir Medi Helps?",
+      "description": "Combinamos experiencia en la industria con soluciones innovadoras para ofrecer resultados excepcionales a nuestros socios de atención médica.",
+      "expertise": {
+        "title": "Experiencia Confiable",
+        "description": "Más de 10 años de experiencia en consultoría de salud"
+      },
+      "innovation": {
+        "title": "Soluciones Innovadoras",
+        "description": "Tecnología de punta y metodologías probadas"
+      },
+      "support": {
+        "title": "Soporte Dedicado",
+        "description": "Asistencia y consulta de expertos 24/7"
+      }
+    }
+  },
+  "services": {
+    "network": "Nuestros Servicios",
+    "title": "Soluciones Integrales de Salud",
+    "description": "Ofrecemos una amplia gama de servicios de consultoría en salud para ayudar a las organizaciones a optimizar sus operaciones y brindar una mejor atención al paciente.",
+    "learnMore": "Saber Más",
+    "list": {
+      "analytics": {
+        "title": "Análisis de Salud",
+        "description": "Transforme sus datos de salud en información procesable con nuestras soluciones analíticas avanzadas."
+      },
+      "management": {
+        "title": "Gestión Hospitalaria",
+        "description": "Optimice las operaciones y mejore la atención al paciente con nuestras soluciones integrales de gestión."
+      },
+      "security": {
+        "title": "Seguridad Médica",
+        "description": "Proteja los datos de los pacientes y asegure el cumplimiento con nuestras medidas de seguridad avanzadas."
+      },
+      "metrics": {
+        "title": "Métricas de Rendimiento",
+        "description": "Rastree y optimice el rendimiento de la atención médica con nuestras herramientas analíticas integrales."
+      },
+      "education": {
+        "title": "Educación Médica",
+        "description": "Apoye a las instituciones médicas con recursos educativos y capacitación de vanguardia."
+      },
+      "care": {
+        "title": "Atención al Paciente",
+        "description": "Mejore la experiencia del paciente con nuestras soluciones especializadas de gestión de atención."
+      }
+    }
+  },
+  "hospitals": {
+    "network": "Nuestra Red de Hospitales",
+    "title": "Centros Médicos Líderes",
+    "viewAll": "Ver Todos los Hospitales",
+    "description": "Explore nuestra red de prestigiosos hospitales que brindan servicios de atención médica de clase mundial con tecnología médica de vanguardia y profesionales médicos expertos.",
+    "viewDetails": "Ver Detalles",
+    "list": {
+      "apollo": {
+        "description": "Hospital líder en múltiples especialidades con instalaciones de última generación y profesionales de la salud expertos",
+        "category": "Multi-Especialidad"
+      },
+      "fortis": {
+        "description": "Reconocido por tratamientos médicos avanzados y servicios integrales de atención al paciente",
+        "category": "Super-Especialidad"
+      },
+      "max": {
+        "description": "Excelencia en atención médica con tecnología médica de vanguardia y médicos experimentados",
+        "category": "Super-Especialidad"
+      },
+      "ambani": {
+        "description": "Centro médico de clase mundial que ofrece tratamientos médicos avanzados e investigación",
+        "category": "Investigación y Atención"
+      },
+      "aiims": {
+        "description": "Institución médica gubernamental líder conocida por su excepcional educación médica y atención al paciente",
+        "category": "Gubernamental"
+      },
+      "manipal": {
+        "description": "Centro de salud integrado que brinda servicios médicos integrales y tratamientos especializados",
+        "category": "Multi-Especialidad"
+      }
+    }
+  },
+  "contact": {
+    "title": "Conectémonos",
+    "subtitle": "Contáctenos para cualquier pregunta sobre nuestros servicios o para programar una consulta",
+    "form": {
+      "header": "CONÉCTESE CON NOSOTROS",
+      "subheader": "Nos pondremos en contacto con usted pronto",
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "message": "Mensaje...",
+      "submit": "CONECTAR",
+      "successMessage": "¡Gracias, {name}! Nos pondremos en contacto pronto."
+    },
+    "address": "Karawal Nagar, Uttar Pradesh, 110090",
+    "phone": "+91 9873790001",
+    "email": "Correo"
+  },
+  "footer": {
+    "rights": "Todos los Derechos Reservados",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "language": "Idioma"
+  }
+}
