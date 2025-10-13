@@ -1,6 +1,7 @@
 import { type FormEvent, type ChangeEvent, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslate } from '../../hooks/useTranslate';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 interface FormData {
@@ -19,10 +20,35 @@ const Contact = () => {
     message: ''
   });
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert(translate('contact.form.successMessage').replace('{name}', formData.name));
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    setIsSubmitting(true);
+
+    try {
+      const templateParams = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message
+      };
+
+      await emailjs.send(
+        'service_8tq6xl3', // EmailJS service ID
+        'template_7btaaih', // EmailJS template ID
+        templateParams,
+        'lLH6--0YXEhBlso6i' // EmailJS public key
+      );
+
+      alert(translate('contact.form.successMessage').replace('{name}', formData.name));
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert(translate('contact.form.errorMessage'));
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -52,7 +78,7 @@ const Contact = () => {
             </div>
             <div className="contact-item">
               <i className="fas fa-envelope"></i>
-              <span>info.mehilife@gmail.com</span>
+              <span>mehi.helps@gmail.com</span>
             </div>
           </div>
         </motion.div>
@@ -107,8 +133,12 @@ const Contact = () => {
                 required
               ></textarea>
             </div>
-            <button type="submit" className="connect-button">
-              {translate('contact.form.submit')}
+            <button 
+              type="submit" 
+              className="connect-button"
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? translate('contact.form.sending') : translate('contact.form.submit')}
             </button>
           </form>
         </motion.div>
