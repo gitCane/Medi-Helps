@@ -163,6 +163,12 @@
   background-color: #f8f9fa;
 }
 
+.connect-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  background-color: #e9ecef;
+}
+
 @media (max-width: 768px) {
   .contact-card {
     padding: 2rem;
