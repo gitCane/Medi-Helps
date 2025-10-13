@@ -78,7 +78,7 @@ const Contact = () => {
             </div>
             <div className="contact-item">
               <i className="fas fa-envelope"></i>
-              <span>info.mehilife@gmail.com</span>
+              <span>mehi.helps@gmail.com</span>
             </div>
           </div>
         </motion.div>
