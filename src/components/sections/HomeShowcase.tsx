@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import ImageStrip from '../ImageStrip';
 import { useBreakpoint } from '../../hooks/useBreakpoint';
 import { useTranslate } from '../../hooks/useTranslate';
