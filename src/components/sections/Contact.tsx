@@ -35,10 +35,10 @@ const Contact = () => {
       };
 
       await emailjs.send(
-        'service_8tq6xl3', // EmailJS service ID
-        'template_7btaaih', // EmailJS template ID
+        'service_o2u4n4x', // EmailJS service ID
+        'template_ftdooo9', // EmailJS template ID
         templateParams,
-        'lLH6--0YXEhBlso6i' // EmailJS public key
+        'PMhEGLKafBLLybLun' // EmailJS public key
       );
 
       alert(translate('contact.form.successMessage').replace('{name}', formData.name));
@@ -78,7 +78,7 @@ const Contact = () => {
             </div>
             <div className="contact-item">
               <i className="fas fa-envelope"></i>
-              <span>mehi.helps@gmail.com</span>
+              <span>medis.helps@gmail.com</span>
             </div>
           </div>
         </motion.div>
