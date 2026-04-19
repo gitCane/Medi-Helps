@@ -13,32 +13,32 @@ const Hospitals = () => {
   
   const hospitals: Hospital[] = [
     {
-      image: '../../../public/images/apollo.jpeg',
+      image: '/images/apollo.jpg',
       key: 'apollo',
       name: 'Apollo Hospitals'
     },
     {
-      image: '../../../public/images/fortis.jpeg',
+      image: '/images/fortis.jpg',
       key: 'fortis',
       name: 'Fortis Healthcare'
     },
     {
-      image: '../../../public/images/max.jpeg',
+      image: '/images/max.jpg',
       key: 'max',
       name: 'Max Super Specialty Hospital'
     },
     {
-      image: '../../../public/images/ambani.jpeg',
+      image: '/images/ambani.jpg',
       key: 'ambani',
       name: 'Kokilaben Dhirubhai Ambani Hospital'
     },
     {
-      image: '../../../public/images/aiims.jpeg',
+      image: '/images/aiims.jpg',
       key: 'aiims',
       name: 'AIIMS Delhi'
     },
     {
-      image: '../../../public/images/manipal.jpeg',
+      image: '/images/manipal.jpg',
       key: 'manipal',
       name: 'Manipal Hospitals'
     }

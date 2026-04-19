@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 import { LanguageContext } from '../../context/LanguageContext';
 import type { Language } from '../../types/translations';
 import { useTranslate } from '../../hooks/useTranslate';
