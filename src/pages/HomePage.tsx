@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
               <h3>{translate('nav-services')}</h3>
               <p>{translate('home.quickLinks.services')}</p>
             </Link>
-            <Link to="/projects" className="quick-link-card">
+            <Link to="/hospitals" className="quick-link-card">
               <h3>{translate('nav-hospitals')}</h3>
               <p>{translate('home.quickLinks.hospitals')}</p>
             </Link>

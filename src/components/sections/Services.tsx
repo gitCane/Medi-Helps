@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import type { ReactElement } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -13,6 +13,91 @@ interface ServiceCard {
 
 const Services: React.FC = () => {
   const { translate } = useTranslate();
+  const [activeTreatment, setActiveTreatment] = useState('tab1');
+  const asset = (path: string) => new URL(`../../../IMG/${path}`, import.meta.url).href;
+  
+  interface Treatment {
+    id: string;
+    title: string;
+    icon: string;
+    image: string;
+    description: string;
+  }
+
+  const treatments: Treatment[] = [
+    {
+      id: 'tab1',
+      title: 'Cardiac Sciences',
+      icon: asset('cardic.png'),
+      image: asset('cardiac-science-1_0.jpg'),
+      description: 'Diagnosis and treatment of heart-related conditions including coronary artery disease, arrhythmias, heart failure, and hypertension.',
+      },
+    {
+      id: 'tab2',
+      title: 'Oncology',
+      icon: asset('dedicated_0.png'),
+      image: asset('oncology-1_1.jpg'),
+      description: 'Comprehensive cancer care with chemotherapy, radiation therapy, targeted therapy, and surgical support.'
+    },
+    {
+      id: 'tab3',
+      title: 'Neurology',
+      icon: asset('neurology.png'),
+      image: asset('neurology-1_0.jpg'),
+      description: 'Advanced treatments for brain and nervous system disorders including stroke, epilepsy, and movement disorders.'
+    },
+    {
+      id: 'tab4',
+      title: 'Spine Surgery',
+      icon: asset('orthopaedics_0_0.png'),
+      image: asset('orthopaedics-1_0.jpg'),
+      description: 'Surgical and non-surgical treatment for spinal disorders, scoliosis, herniated discs, and spinal instability.'
+    },
+    {
+      id: 'tab5',
+      title: 'Dentistry',
+      icon: asset('ent.png'),
+      image: asset('plastic-surgery-1_0.jpg'),
+      description: 'Complete dental care including restorative, cosmetic, and surgical dentistry for healthy, confident smiles.'
+    },
+    {
+      id: 'tab6',
+      title: 'Orthopaedics',
+      icon: asset('orthopaedics_0_0.png'),
+      image: asset('orthopaedics-1_0.jpg'),
+      description: 'Treatment of bone, joint, and musculoskeletal disorders, including sports injuries and joint replacement.'
+    },
+    {
+      id: 'tab7',
+      title: 'Organ Transplants',
+      icon: asset('heart.png'),
+      image: asset('transplant-1_0.jpg'),
+      description: 'Pre-transplant evaluation, surgery, and post-transplant care for kidney, liver, heart, and more.'
+    },
+    {
+      id: 'tab8',
+      title: 'Gastroenterology',
+      icon: asset('gastroenterology.png'),
+      image: asset('gastroenterology-1_0.jpg'),
+      description: 'Care for digestive health, liver disorders, and gastrointestinal conditions with advanced diagnostics.'
+    },
+    {
+      id: 'tab9',
+      title: 'Smile Design Dentistry',
+      icon: asset('gynaecologist_0.png'),
+      image: asset('ent-1.jpg'),
+      description: 'Cosmetic smile design and restorative dentistry to create beautiful, natural smiles.'
+    },
+    {
+      id: 'tab10',
+      title: 'Cosmetology',
+      icon: asset('gynaecologist_0.png'),
+      image: asset('plastic-surgery-1_0.jpg'),
+      description: 'Aesthetic and reconstructive treatments including advanced skin, body, and facial procedures.'
+    }
+  ];
+
+  const selectedTreatment = treatments.find(treatment => treatment.id === activeTreatment) || treatments[0];
   
   const services: ServiceCard[] = [
     {
@@ -38,30 +123,6 @@ const Services: React.FC = () => {
         </svg>
       ),
       key: 'security'
-    },
-    {
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-        </svg>
-      ),
-      key: 'metrics'
-    },
-    {
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-        </svg>
-      ),
-      key: 'education'
-    },
-    {
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-        </svg>
-      ),
-      key: 'care'
     }
   ];
 
@@ -111,6 +172,80 @@ const Services: React.FC = () => {
             </motion.div>
           ))}
         </motion.div>
+
+        <motion.section
+          className="treatments-section"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          viewport={{ once: true }}
+        >
+          <div className="treatments-header">
+            <h2 className="section-title">{translate('services.treatments.subtitle')}</h2>
+            <p className="section-description">{translate('services.treatments.description')}</p>
+          </div>
+          <div className="treatments-layout">
+            <div className="treatments-card-full">
+              <div className="treatments-card-sidebar">
+                <ul>
+                  {treatments.map((treatment) => (
+                    <li key={treatment.id}>
+                      <button
+                        type="button"
+                        className={activeTreatment === treatment.id ? 'tab-button active' : 'tab-button'}
+                        onClick={() => setActiveTreatment(treatment.id)}
+                      >
+                        <img src={treatment.icon} alt={treatment.title} />
+                        <span>{treatment.title}</span>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="treatments-card-detail">
+                <div className="treatments-card-image">
+                  <img src={selectedTreatment.image} alt={selectedTreatment.title} loading="lazy" />
+                  <div className="treatments-card-label">{selectedTreatment.title}</div>
+                </div>
+                <div className="treatments-card-body">
+                  <p>{selectedTreatment.description}</p>
+                  <Link to="/contact" className="btn btn-primary treatments-cta">
+                    {translate('services.contactCareTeam')}
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <aside className="visa-support-panel">
+              <div className="visa-support-card">
+                <h3>{translate('services.international.title')}</h3>
+                <p>{translate('services.international.description')}</p>
+                <div className="visa-links">
+                  <a href="/contact" className="visa-link">{translate('services.international.contactDesk')}</a>
+                </div>
+                <div className="visa-cards">
+                  <div className="visa-card">
+                    <div className="visa-card-icon">🛂</div>
+                    <div>
+                      <h4>{translate('services.international.visaSupport')}</h4>
+                    </div>
+                  </div>
+                  <div className="visa-card">
+                    <div className="visa-card-icon">✈️</div>
+                    <div>
+                      <h4>{translate('services.international.airportPickup')}</h4>
+                    </div>
+                  </div>
+                  <div className="visa-card">
+                    <div className="visa-card-icon">🤝</div>
+                    <div>
+                      <h4>{translate('services.international.coordinators')}</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </motion.section>
       </div>
     </section>
   );
