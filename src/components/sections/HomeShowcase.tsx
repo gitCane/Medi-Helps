@@ -20,7 +20,7 @@ const HomeShowcase: React.FC = () => {
     fontSize: isMobile ? '2rem'
       : isTablet ? '2.5rem'
         : isLaptop ? '2.75rem'
-          : '3.5rem',
+          : '3rem',
     textAlign: (isTablet || isLaptop || isMobile) ? 'center' as const : 'left' as const
   };
 
@@ -77,13 +77,13 @@ const HomeShowcase: React.FC = () => {
               <div className="stat-card" style={{
                 padding: isTablet ? '1rem' : isLaptop ? '1.25rem' : '1.5rem'
               }}>
-                <h3 style={{ fontSize: isTablet ? '1.75rem' : '2rem' }}>95%</h3>
+                <h3 style={{ fontSize: isTablet ? '1.75rem' : '2rem' }}>100%</h3>
                 <p>{translate('home.stats.satisfaction')}</p>
               </div>
               <div className="stat-card" style={{
                 padding: isTablet ? '1rem' : isLaptop ? '1.25rem' : '1.5rem'
               }}>
-                <h3 style={{ fontSize: isTablet ? '1.75rem' : '2rem' }}>10+</h3>
+                <h3 style={{ fontSize: isTablet ? '1.75rem' : '2rem' }}>15+</h3>
                 <p>{translate('home.stats.experience')}</p>
               </div>
               <div className="stat-card" style={{

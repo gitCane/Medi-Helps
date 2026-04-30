@@ -1,9 +1,9 @@
 {
-  "about-us-header": "About Us",
+  "about-us-header": "About MediHelps",
   "about-us-mission": "Our Mission",
   "about-us-vision": "Our Vision",
-  "about-us-mission-text": "To provide accessible and quality healthcare assistance to everyone",
-  "about-us-vision-text": "To become the most trusted medical assistance provider worldwide",
+  "about-us-mission-text": "To bridge the gap between global patients and India's leading healthcare facilities, ensuring affordable, high-standard medical outcomes for everyone.",
+  "about-us-vision-text": "To be the premier global gateway for medical excellence, recognized for empathy, transparency, and seamless patient care.",
   "nav-home": "Home",
   "nav-about": "About",
   "nav-services": "Services",
@@ -11,150 +11,168 @@
   "nav-contact": "Contact",
   "home": {
     "hero": {
-      "welcome": "Welcome to Medi Helps",
-      "title": "Modern Healthcare Solutions for Better Living",
-      "description": "Experience world-class healthcare consulting that transforms challenges into opportunities. We help healthcare providers optimize their operations and deliver better patient care.",
-      "subtitle": "Professional Medical Assistance",
-      "cta": "Get Started"
+      "welcome": "Welcome to MediHelps India",
+      "title": "Elite Healthcare. Affordable Outcomes. Global Trust.",
+      "description": "Navigate India’s leading medical institutions. We provide comprehensive facilitation for international patients, ensuring a seamless journey from initial consultation to post-operative recovery.",
+      "subtitle": "Your Trusted Medical Facilitation Partner in India",
+      "cta": "Request a Cost Estimate"
     },
     "services": {
-      "title": "Our Services",
-      "consultation": "Medical Consultation",
-      "emergency": "24/7 Emergency Care",
-      "specialists": "Specialist Referrals",
-      "insurance": "Insurance Assistance"
+      "title": "Holistic Patient Facilitation",
+      "consultation": "Expert Medical Opinions",
+      "emergency": "Medical Visa Assistance",
+      "specialists": "Specialized Physician Referrals",
+      "insurance": "Travel & Logistics Management"
     },
     "quickLinks": {
-      "about": "Learn more about our mission and values",
-      "services": "Explore our healthcare solutions",
-      "hospitals": "Explore our network of prestigious hospitals",
-      "contact": "Get in touch with our team"
+      "about": "Why India is a global leader in healthcare",
+      "services": "Explore our medical & travel support services",
+      "hospitals": "Our network of accredited hospitals",
+      "contact": "Talk to a Care Coordinator"
     },
     "stats": {
-      "satisfaction": "Client Satisfaction",
-      "experience": "Years Experience",
-      "projects": "Projects Completed"
+      "satisfaction": "Patient Success Rate",
+      "experience": "Years of Clinical Excellence",
+      "projects": "International Patients Treated"
     }
   },
   "about": {
-    "subtitle": "About Us",
-    "title": "Making Healthcare Better Together",
-    "description": "With years of experience and deep industry knowledge, we help healthcare organizations optimize their operations and deliver exceptional patient care",
-    "mission": "Our Mission",
-    "vision": "Our Vision",
-    "missionText": "To provide accessible and quality healthcare assistance to everyone",
-    "visionText": "To become the most trusted medical assistance provider worldwide",
+    "subtitle": "Why Choose India?",
+    "title": "Global Healthcare Standards at a Fraction of the Cost",
+    "description": "MediHelps connects international patients with India's most prestigious medical institutions. We understand that traveling for health is a major decision; we make it stress-free by managing every clinical and logistical detail of your visit.",
+    "mission": "Our Commitment",
+    "vision": "Our Goal",
+    "missionText": "Providing transparent, cost-effective, and high-standard medical pathways for international patients.",
+    "visionText": "Setting the benchmark for medical tourism through personalized care and clinical precision.",
     "management": {
-      "title": "Hospital Management",
-      "description": "Streamline operations and improve patient care with our comprehensive hospital management solutions"
+      "title": "Comprehensive Logistics",
+      "description": "From airport transfers to local hospitality and language interpretation, we ensure a comfortable environment for your recovery."
     },
     "education": {
-      "title": "Medical Education",
-      "description": "Supporting medical institutions with cutting-edge educational resources and training programs"
+      "title": "Recovery Support",
+      "description": "Coordinating post-operative care and rehabilitation to ensure you return home in optimal health."
     },
     "whyChoose": {
-      "title": "Why Choose Medi Helps?",
-      "description": "We combine industry expertise with innovative solutions to deliver exceptional results for our healthcare partners.",
+      "title": "The MediHelps Advantage",
+      "description": "We combine medical expertise with dedicated hospitality to deliver a seamless healing experience.",
       "expertise": {
-        "title": "Trusted Expertise",
-        "description": "Over 10 years of experience in healthcare consulting"
+        "title": "Accredited Institutions",
+        "description": "We partner exclusively with India’s highest-rated accredited hospitals."
       },
       "innovation": {
-        "title": "Innovative Solutions",
-        "description": "Cutting-edge technology and proven methodologies"
+        "title": "Economic Efficiency",
+        "description": "Access elite medical procedures at significantly lower costs than Western alternatives."
       },
       "support": {
-        "title": "Dedicated Support",
-        "description": "24/7 expert assistance and consultation"
+        "title": "Dedicated Concierge",
+        "description": "A personal care coordinator is assigned to guide you through every step of your medical journey."
       }
     }
   },
   "services": {
     "network": "Our Services",
-    "title": "Comprehensive Healthcare Solutions",
-    "description": "We offer a wide range of healthcare consulting services to help organizations optimize their operations and deliver better patient care.",
-    "learnMore": "Learn More",
+    "title": "Your Pathway to Wellness",
+    "description": "We offer a complete ecosystem of medical and travel services designed specifically for the unique requirements of foreign patients.",
+    "learnMore": "Explore Treatment Options",
+    "contactCareTeam": "Consult our Specialists",
+    "treatments": {
+      "subtitle": "Specialized Clinical Care",
+      "description": "Advanced treatments in Cardiology, Oncology, and Orthopedics using the latest precision technology."
+    },
+    "international": {
+      "subtitle": "International Patient Services",
+      "title": "Seamless Medical Travel to India",
+      "description": "We handle the administrative complexities so you can focus on healing. Our integrated approach covers everything from medical visas to premium accommodation.",
+      "contactDesk": "Speak with a Global Care Advisor",
+      "callNow": "International Patient Helpline",
+      "quickLinksLabel": "Resources for Patients:",
+      "travelGuide": "Accommodation Options",
+      "treatmentGuide": "Treatment Planning",
+      "visaSupport": "Medical Visa Facilitation",
+      "airportPickup": "Airport Transfers & Local Stay",
+      "coordinators": "Language Support & Personal Assistance"
+    },
     "list": {
       "analytics": {
-        "title": "Healthcare Analytics",
-        "description": "Transform your healthcare data into actionable insights with our advanced analytics solutions."
+        "title": "Medical Record Evaluation",
+        "description": "Receive a comprehensive assessment of your medical reports from India's senior specialists before you begin your journey."
       },
       "management": {
-        "title": "Hospital Management",
-        "description": "Streamline operations and improve patient care with our comprehensive management solutions."
+        "title": "Visa Documentation",
+        "description": "Assistance with medical visa invitations and travel documentation for patients and attendants."
       },
       "security": {
-        "title": "Medical Security",
-        "description": "Protect patient data and ensure compliance with our advanced security measures."
+        "title": "Priority Scheduling",
+        "description": "Bypass waiting lists with immediate admission and treatment by senior consultants."
       },
       "metrics": {
-        "title": "Performance Metrics",
-        "description": "Track and optimize healthcare performance with our comprehensive analytics tools."
+        "title": "Transparent Pricing",
+        "description": "All-inclusive medical packages with no hidden costs, covering surgery and hospital stay."
       },
       "education": {
-        "title": "Medical Education",
-        "description": "Support medical institutions with cutting-edge educational resources and training."
+        "title": "Companion Support",
+        "description": "Logistical support for family members, including visa assistance and nearby accommodation."
       },
       "care": {
-        "title": "Patient Care",
-        "description": "Enhance patient experience with our specialized care management solutions."
+        "title": "Continuity of Care",
+        "description": "Structured follow-up protocols and remote monitoring once you return to your home country."
       }
     }
   },
   "hospitals": {
-    "network": "Our Network Hospitals",
-    "title": "Leading Healthcare Facilities",
-    "viewAll": "View All Hospitals",
-    "description": "Explore our network of prestigious hospitals providing world-class healthcare services with cutting-edge medical technology and expert medical professionals.",
-    "viewDetails": "View Details",
+    "network": "Our Partner Hospitals",
+    "title": "Leading Medical Facilities",
+    "viewAll": "Explore All Hospitals",
+    "description": "Our network includes India’s most advanced hospitals, featuring state-of-the-art infrastructure and internationally recognized medical faculties.",
+    "viewDetails": "View Facility Profile",
     "list": {
       "apollo": {
-        "description": "Leading multi-specialty hospital with state-of-the-art facilities and expert healthcare professionals",
+        "description": "A leader in clinical excellence, recognized for pioneering organ transplant and cardiac programs.",
         "category": "Multi-Specialty"
       },
       "fortis": {
-        "description": "Renowned for advanced medical treatments and comprehensive patient care services",
+        "description": "Expertise in advanced orthopedics and neurosurgery with a focus on minimally invasive techniques.",
         "category": "Super-Specialty"
       },
       "max": {
-        "description": "Excellence in healthcare with cutting-edge medical technology and experienced doctors",
+        "description": "A center for excellence in oncology and complex surgical interventions using robotic technology.",
         "category": "Super-Specialty"
       },
       "ambani": {
-        "description": "World-class healthcare facility offering advanced medical treatments and research",
+        "description": "Specialized in high-end diagnostics and complex pediatric care with a focus on clinical research.",
         "category": "Research & Care"
       },
-      "aiims": {
-        "description": "Premier government medical institution known for exceptional medical education and patient care",
-        "category": "Government"
+      "artemis": {
+        "description": "A premier institution providing personalized care and dedicated wings for international patients.",
+        "category": "International Care"
       },
       "manipal": {
-        "description": "Integrated healthcare facility providing comprehensive medical services and specialized treatments",
+        "description": "An integrated facility offering a broad spectrum of specialty treatments and preventive care.",
         "category": "Multi-Specialty"
       }
     }
   },
   "contact": {
-    "title": "Let's Connect",
-    "subtitle": "Get in touch with us for any questions about our services or to schedule a consultation",
+    "title": "Begin Your Recovery",
+    "subtitle": "Share your medical reports for a comprehensive assessment and a cost estimate within 24 hours.",
     "form": {
-      "header": "CONNECT WITH US",
-      "subheader": "We will get in touch with you shortly",
-      "name": "Full name",
-      "email": "Email",
-      "phone": "Phone no.",
-      "message": "Message...",
-      "submit": "CONNECT",
-      "sending": "SENDING...",
-      "successMessage": "Thanks, {name}! We will contact you soon.",
-      "errorMessage": "Sorry, there was an error sending your message. Please try again."
+      "header": "REQUEST A MEDICAL ASSESSMENT",
+      "subheader": "Our coordinators will provide a response shortly",
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone (with Country Code)",
+      "message": "Specify your medical concern...",
+      "submit": "SUBMIT INQUIRY",
+      "sending": "PROCESSING...",
+      "successMessage": "Thank you, {name}. A medical coordinator will contact you shortly.",
+      "errorMessage": "Submission failed. Please reach out via WhatsApp or Email."
     },
-    "address": "Karawal Nagar, Uttar Pradesh, 110090",
-    "phone": "+91 9873790001",
-    "email": "Email"
+    "address": "Delhi NCR, India",
+    "phone": "+91 9891993300",
+    "email": "care@medihelps.com"
   },
   "footer": {
-    "rights": "All Rights Reserved",
+    "rights": "All Rights Reserved | MediHelps India",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "language": "Language"

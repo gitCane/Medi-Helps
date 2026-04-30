@@ -4,7 +4,7 @@ import './Hospitals.css';
 
 interface Hospital {
   image: string;
-  key: 'apollo' | 'fortis' | 'max' | 'ambani' | 'aiims' | 'manipal';
+  key: 'apollo' | 'fortis' | 'max' | 'ambani' | 'artemis' | 'manipal';
   name: string;
 }
 
@@ -33,9 +33,9 @@ const Hospitals = () => {
       name: 'Kokilaben Dhirubhai Ambani Hospital'
     },
     {
-      image: '/images/aiims.jpg',
-      key: 'aiims',
-      name: 'AIIMS Delhi'
+      image: '/images/artemis.jpg',
+      key: 'artemis',
+      name: 'Artemis Health Institute'
     },
     {
       image: '/images/manipal.jpg',

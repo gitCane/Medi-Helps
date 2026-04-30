@@ -85,10 +85,421 @@
   color: green;
 }
 
+.treatments-section {
+  margin-top: 4rem;
+  padding: 3rem 0 0;
+}
+
+.treatments-header {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.treatments-header-split {
+  grid-template-columns: 1.3fr 1fr;
+  align-items: start;
+}
+
+.visa-panel-intro {
+  background: #f8fafc;
+  border-radius: 24px;
+  padding: 2rem;
+}
+
+.pill-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20, 102, 72, 0.12);
+  color: var(--primary-dark);
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.visa-panel-intro h3,
+.visa-support-card h3 {
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1.9rem;
+  line-height: 1.15;
+}
+
+.visa-panel-intro p,
+.visa-support-card p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.visa-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.visa-link {
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.visa-resources {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.visa-resources a {
+  color: var(--primary-dark);
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 0.75rem;
+}
+
+.treatments-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.treatments-card-full {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 1.5rem;
+  background: var(--white);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.treatments-card-sidebar {
+  background: #f8fafc;
+  padding: 1.5rem;
+  overflow-y: auto;
+  max-height: 480px;
+}
+
+.treatments-card-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.tab-button {
+  width: 100%;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 14px 16px;
+  border-radius: 18px;
+  border: 1px solid transparent;
+  background: #ffffff;
+  color: var(--text-primary);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab-button img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.tab-button:hover,
+.tab-button.active {
+  background: rgba(20, 102, 72, 0.12);
+  border-color: rgba(20, 102, 72, 0.2);
+}
+
+.treatments-card-detail {
+  display: grid;
+}
+
+.treatments-card {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+  max-width: none;
+}
+
+.treatments-card-image {
+  position: relative;
+  min-height: 220px;
+  overflow: hidden;
+}
+
+.treatments-card-body {
+  padding: 1.5rem;
+}
+
+.treatments-card-image {
+  position: relative;
+  min-height: 240px;
+  overflow: hidden;
+}
+
+.treatments-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.treatments-card-label {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  background: rgba(4, 70, 39, 0.85);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 16px;
+  font-weight: 700;
+}
+
+.treatments-card-body {
+  padding: 1.8rem;
+}
+
+.treatments-card-body h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.treatment-procedures {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.treatment-procedures li {
+  background: rgba(20, 102, 72, 0.08);
+  color: var(--primary-dark);
+  border-radius: 9999px;
+  padding: 0.9rem 1rem;
+  font-size: 0.95rem;
+}
+
+.treatments-cta {
+  margin-top: 1.75rem;
+  display: inline-flex;
+}
+
+.visa-support-panel {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.visa-support-card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 1.8rem;
+  box-shadow: var(--shadow);
+}
+
+.visa-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  align-items: start;
+}
+
+.visa-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #f8fafc;
+  border: 1px solid rgba(20, 102, 72, 0.12);
+  box-shadow: 0 14px 28px rgba(20, 102, 72, 0.06);
+  padding: 1rem 0.6rem;
+  border-radius: 22px;
+  min-height: 180px;
+  gap: 0.85rem;
+  padding-bottom: 28px;
+}
+
+.visa-card-icon {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: rgba(20, 102, 72, 0.12);
+  font-size: 1.2rem;
+}
+
+.visa-card h4 {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.35;
+  color: var(--text-primary);
+}
+
+@media (max-width: 1024px) {
+  .visa-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .treatments-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .treatments-card-full {
+    grid-template-columns: 1fr;
+  }
+
+  .treatment-procedures {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .treatments-header-split {
+    grid-template-columns: 1fr;
+  }
+
+  .visa-panel-intro {
+    padding: 1.5rem;
+  }
+
+  .visa-links,
+  .visa-resources {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .visa-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.button-icon {
+  display: inline-flex;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-icon svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.international-care {
+  margin-top: 4rem;
+  padding: 3rem;
+  border-radius: 28px;
+  background: #f9fafb;
+  box-shadow: var(--shadow);
+}
+
+.international-care .international-content {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.international-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.international-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.international-links a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.international-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.international-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--white);
+  border-radius: 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+.international-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(2, 132, 199, 0.1);
+  color: var(--primary);
+}
+
+.international-item p {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+@media (max-width: 1024px) {
+  .international-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .international-care {
+    padding: 2rem;
+  }
+
+  .international-list {
+    grid-template-columns: 1fr;
+  }
+
+  .international-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
 @media (max-width: 1024px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+  }
+
+  .treatments-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .treatment-procedures {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -103,7 +514,19 @@
     margin: 0 auto;
   }
 
-  .service-card {
-    padding: 1.5rem;
+  .treatments-layout {
+    gap: 1rem;
+  }
+
+  .treatments-tabs ul {
+    gap: 0.5rem;
+  }
+
+  .tab-button {
+    padding: 14px 16px;
+  }
+
+  .treatment-procedures {
+    grid-template-columns: 1fr;
   }
 }
