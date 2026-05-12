@@ -77,7 +77,49 @@
     "contactCareTeam": "Consult our Specialists",
     "treatments": {
       "subtitle": "Specialized Clinical Care",
-      "description": "Advanced treatments in Cardiology, Oncology, and Orthopedics using the latest precision technology."
+      "description": "Advanced treatments in Cardiology, Oncology, and Orthopedics using the latest precision technology.",
+      "items": {
+        "tab1": {
+          "title": "Cardiac Sciences",
+          "description": "Diagnosis and treatment of heart-related conditions including coronary artery disease, arrhythmias, heart failure, and hypertension."
+        },
+        "tab2": {
+          "title": "Oncology",
+          "description": "Comprehensive cancer care with chemotherapy, radiation therapy, targeted therapy, and surgical support."
+        },
+        "tab3": {
+          "title": "Neurology",
+          "description": "Advanced treatments for brain and nervous system disorders including stroke, epilepsy, and movement disorders."
+        },
+        "tab4": {
+          "title": "Spine Surgery",
+          "description": "Surgical and non-surgical treatment for spinal disorders, scoliosis, herniated discs, and spinal instability."
+        },
+        "tab5": {
+          "title": "Dentistry",
+          "description": "Complete dental care including restorative, cosmetic, and surgical dentistry for healthy, confident smiles."
+        },
+        "tab6": {
+          "title": "Orthopaedics",
+          "description": "Treatment of bone, joint, and musculoskeletal disorders, including sports injuries and joint replacement."
+        },
+        "tab7": {
+          "title": "Organ Transplants",
+          "description": "Pre-transplant evaluation, surgery, and post-transplant care for kidney, liver, heart, and more."
+        },
+        "tab8": {
+          "title": "Gastroenterology",
+          "description": "Care for digestive health, liver disorders, and gastrointestinal conditions with advanced diagnostics."
+        },
+        "tab9": {
+          "title": "Smile Design",
+          "description": "Cosmetic smile design and restorative dentistry to create beautiful, natural smiles."
+        },
+        "tab10": {
+          "title": "Cosmetology",
+          "description": "Aesthetic and reconstructive treatments including advanced skin, body, and facial procedures."
+        }
+      }
     },
     "international": {
       "subtitle": "International Patient Services",

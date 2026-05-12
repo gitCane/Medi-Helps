@@ -49,10 +49,17 @@
 }
 
 .service-icon {
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   margin: 0 auto 1.5rem;
   color: var(--primary);
+  display: grid;
+  place-items: center;
+}
+
+.service-icon svg {
+  width: 100%;
+  height: 100%;
 }
 
 .service-card h3 {
@@ -212,6 +219,11 @@
   width: 36px;
   height: 36px;
   object-fit: contain;
+}
+
+.tab-button-icon.dentistry-icon {
+  width: 48px;
+  height: 48px;
 }
 
 .tab-button:hover,

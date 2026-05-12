@@ -77,7 +77,49 @@
     "contactCareTeam": "Consulte a nuestros Especialistas",
     "treatments": {
       "subtitle": "Atención Clínica Especializada",
-      "description": "Tratamientos avanzados en Cardiología, Oncología y Ortopedia utilizando la última tecnología de precisión."
+      "description": "Tratamientos avanzados en Cardiología, Oncología y Ortopedia utilizando la última tecnología de precisión.",
+      "items": {
+        "tab1": {
+          "title": "Cardio",
+          "description": "Diagnóstico y tratamiento de afecciones del corazón, incluyendo enfermedad de las arterias coronarias, arritmias, insuficiencia cardíaca e hipertensión."
+        },
+        "tab2": {
+          "title": "Oncología",
+          "description": "Atención integral contra el cáncer con quimioterapia, radioterapia, terapias dirigidas y apoyo quirúrgico."
+        },
+        "tab3": {
+          "title": "Neurología",
+          "description": "Tratamientos avanzados para trastornos del cerebro y sistema nervioso, incluyendo accidente cerebrovascular, epilepsia y trastornos del movimiento."
+        },
+        "tab4": {
+          "title": "Cirugía de Columna",
+          "description": "Tratamiento quirúrgico y no quirúrgico de trastornos de la columna vertebral, escoliosis, hernias discales e inestabilidad vertebral."
+        },
+        "tab5": {
+          "title": "Odontología",
+          "description": "Atención dental completa que incluye odontología restauradora, estética y quirúrgica para sonrisas saludables y confiadas."
+        },
+        "tab6": {
+          "title": "Ortopedia",
+          "description": "Tratamiento de trastornos óseos, articulares y musculoesqueléticos, incluidas lesiones deportivas y reemplazo de articulaciones."
+        },
+        "tab7": {
+          "title": "Trasplantes de Órganos",
+          "description": "Evaluación pretrasplante, cirugía y cuidado posterior al trasplante para riñón, hígado, corazón y más."
+        },
+        "tab8": {
+          "title": "Gastroenterología",
+          "description": "Atención para la salud digestiva, trastornos hepáticos y condiciones gastrointestinales con diagnóstico avanzado."
+        },
+        "tab9": {
+          "title": "Diseño de Sonrisa",
+          "description": "Diseño de sonrisa cosmético y odontología restauradora para crear sonrisas hermosas y naturales."
+        },
+        "tab10": {
+          "title": "Cosmetología",
+          "description": "Tratamientos estéticos y reconstructivos, incluida la piel, cuerpo y rostro avanzados."
+        }
+      }
     },
     "international": {
       "subtitle": "Servicios para Pacientes Internacionales",

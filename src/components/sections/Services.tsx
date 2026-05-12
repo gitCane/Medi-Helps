@@ -27,77 +27,79 @@ const Services: React.FC = () => {
   const treatments: Treatment[] = [
     {
       id: 'tab1',
-      title: 'Cardiac Sciences',
+      title: 'services.treatments.items.tab1.title',
       icon: asset('cardic.png'),
       image: asset('cardiac-science-1_0.jpg'),
-      description: 'Diagnosis and treatment of heart-related conditions including coronary artery disease, arrhythmias, heart failure, and hypertension.',
-      },
+      description: 'services.treatments.items.tab1.description',
+    },
     {
       id: 'tab2',
-      title: 'Oncology',
+      title: 'services.treatments.items.tab2.title',
       icon: asset('dedicated_0.png'),
       image: asset('oncology-1_1.jpg'),
-      description: 'Comprehensive cancer care with chemotherapy, radiation therapy, targeted therapy, and surgical support.'
+      description: 'services.treatments.items.tab2.description'
     },
     {
       id: 'tab3',
-      title: 'Neurology',
+      title: 'services.treatments.items.tab3.title',
       icon: asset('neurology.png'),
       image: asset('neurology-1_0.jpg'),
-      description: 'Advanced treatments for brain and nervous system disorders including stroke, epilepsy, and movement disorders.'
+      description: 'services.treatments.items.tab3.description'
     },
     {
       id: 'tab4',
-      title: 'Spine Surgery',
+      title: 'services.treatments.items.tab4.title',
       icon: asset('orthopaedics_0_0.png'),
       image: asset('orthopaedics-1_0.jpg'),
-      description: 'Surgical and non-surgical treatment for spinal disorders, scoliosis, herniated discs, and spinal instability.'
+      description: 'services.treatments.items.tab4.description'
     },
     {
       id: 'tab5',
-      title: 'Dentistry',
-      icon: asset('ent.png'),
-      image: asset('plastic-surgery-1_0.jpg'),
-      description: 'Complete dental care including restorative, cosmetic, and surgical dentistry for healthy, confident smiles.'
+      title: 'services.treatments.items.tab5.title',
+      icon: asset('dantk.png'),
+      image: asset('dant.jpg'),
+      description: 'services.treatments.items.tab5.description'
     },
     {
       id: 'tab6',
-      title: 'Orthopaedics',
+      title: 'services.treatments.items.tab6.title',
       icon: asset('orthopaedics_0_0.png'),
       image: asset('orthopaedics-1_0.jpg'),
-      description: 'Treatment of bone, joint, and musculoskeletal disorders, including sports injuries and joint replacement.'
+      description: 'services.treatments.items.tab6.description'
     },
     {
       id: 'tab7',
-      title: 'Organ Transplants',
+      title: 'services.treatments.items.tab7.title',
       icon: asset('heart.png'),
       image: asset('transplant-1_0.jpg'),
-      description: 'Pre-transplant evaluation, surgery, and post-transplant care for kidney, liver, heart, and more.'
+      description: 'services.treatments.items.tab7.description'
     },
     {
       id: 'tab8',
-      title: 'Gastroenterology',
+      title: 'services.treatments.items.tab8.title',
       icon: asset('gastroenterology.png'),
       image: asset('gastroenterology-1_0.jpg'),
-      description: 'Care for digestive health, liver disorders, and gastrointestinal conditions with advanced diagnostics.'
+      description: 'services.treatments.items.tab8.description'
     },
     {
       id: 'tab9',
-      title: 'Smile Design Dentistry',
-      icon: asset('gynaecologist_0.png'),
+      title: 'services.treatments.items.tab9.title',
+      icon: asset('braces-2.png'),
       image: asset('ent-1.jpg'),
-      description: 'Cosmetic smile design and restorative dentistry to create beautiful, natural smiles.'
+      description: 'services.treatments.items.tab9.description'
     },
     {
       id: 'tab10',
-      title: 'Cosmetology',
-      icon: asset('gynaecologist_0.png'),
+      title: 'services.treatments.items.tab10.title',
+      icon: asset('plasticsurgery.png'),
       image: asset('plastic-surgery-1_0.jpg'),
-      description: 'Aesthetic and reconstructive treatments including advanced skin, body, and facial procedures.'
+      description: 'services.treatments.items.tab10.description'
     }
   ];
 
   const selectedTreatment = treatments.find(treatment => treatment.id === activeTreatment) || treatments[0];
+  const selectedTreatmentTitle = translate(selectedTreatment.title);
+  const selectedTreatmentDescription = translate(selectedTreatment.description);
   
   const services: ServiceCard[] = [
     {
@@ -195,8 +197,12 @@ const Services: React.FC = () => {
                         className={activeTreatment === treatment.id ? 'tab-button active' : 'tab-button'}
                         onClick={() => setActiveTreatment(treatment.id)}
                       >
-                        <img src={treatment.icon} alt={treatment.title} />
-                        <span>{treatment.title}</span>
+                        <img
+                      src={treatment.icon}
+                      alt={translate(treatment.title)}
+                      className={treatment.id === 'tab5' ? 'tab-button-icon dentistry-icon' : 'tab-button-icon'}
+                    />
+                        <span>{translate(treatment.title)}</span>
                       </button>
                     </li>
                   ))}
@@ -204,11 +210,11 @@ const Services: React.FC = () => {
               </div>
               <div className="treatments-card-detail">
                 <div className="treatments-card-image">
-                  <img src={selectedTreatment.image} alt={selectedTreatment.title} loading="lazy" />
-                  <div className="treatments-card-label">{selectedTreatment.title}</div>
+                  <img src={selectedTreatment.image} alt={selectedTreatmentTitle} loading="lazy" />
+                  <div className="treatments-card-label">{selectedTreatmentTitle}</div>
                 </div>
                 <div className="treatments-card-body">
-                  <p>{selectedTreatment.description}</p>
+                  <p>{selectedTreatmentDescription}</p>
                   <Link to="/contact" className="btn btn-primary treatments-cta">
                     {translate('services.contactCareTeam')}
                   </Link>
